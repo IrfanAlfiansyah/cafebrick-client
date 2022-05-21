@@ -1,0 +1,268 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: Rubik;
+  src: url(/assets/Rubik/static/Rubik-Regular.ttf);
+}
+
+.profile-login {
+  width: 720px;
+  height: 1628px;
+}
+
+.container {
+  display: flex;
+  font-family: Rubik;
+  background: white;
+  }
+
+.main-content {
+  flex: 1;
+  max-width: 50%;
+  padding: 3.37% 3.43% 0% 3.43%;
+}
+
+.main-header {
+  display: grid;
+  height: 100px;
+  grid-template-columns: 10% 50% 40%;
+}
+
+.coffee-shop-logo {
+  height: 33px;
+  width: 30px;
+  border-radius: 0px;
+  align: center;
+}
+
+.main-header-title {
+  width: 122px;
+  font-size: 20px;
+  color: rgba(106, 64, 41, 1);
+}
+
+.login {
+  width: 97px;
+  font-size: 35px;
+  color: rgba(106, 64, 41, 1);
+  align: right;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.7px;
+  color: rgba(79, 86, 101, 1);
+  margin-bottom: 13px;
+  }
+
+input,
+.register-submit {
+  width: 100%;
+  height: 75px;
+  border-radius: 20px;
+  margin-bottom: 32px;
+}
+
+input[type="text"],
+input[type="password"] {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 23.7px;
+  padding: 25px 30px;
+}
+
+.forgot-password-text{
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  text-decoration: underline solid;
+  color: rgba(106, 64, 41, 1);
+}
+
+.login-submit {
+  margin: 20px 0px;
+  box-shadow: 0px 6px 20px 0px rgba(255, 186, 51, 0.4);
+  border: none;
+  background: rgba(255, 186, 51, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  color: rgba(106, 64, 41, 1);
+}
+
+.login-submit {
+  width: 100%;
+  height: 75px;
+  border-radius: 20px;
+  margin-bottom: 26px;
+  margin-top: 51px;
+}
+
+.login-submit :active {
+  background: rgb(231, 156, 4);
+}
+
+.other-login-method {
+  width: 100%;
+  font-family: Rubik;
+  height: 75px;
+  border-radius: 20px;
+}
+
+.other-login-method {
+  margin: 20px 0px;
+  box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.67);
+  border: none;
+  background: rgba(255, 255, 255, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 25.5px;
+  color: rgba(0, 0, 0, 1);
+}
+
+.other-login-method :active {
+  background: rgb(240, 239, 239);
+}
+
+.has-account {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+}
+
+.has-account-text {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  color: rgba(159, 159, 159, 1);
+}
+
+.underline {
+  flex: 1;
+  height: 2px;
+  border-bottom: 2px solid rgba(196, 196, 196, 1);
+}
+
+.signup-button {
+  display: flex;
+  background: rgba(106, 64, 41, 1);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 25px;
+  height: 75px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  cursor: pointer;
+  box-shadow: 0px 6px 20px 0px rgba(106, 64, 41, 0.63);
+  margin-top: 42px;
+  margin-bottom: 82px;
+  color: rgba(255, 255, 255, 1);
+}
+
+.signup-button :active {
+  background: rgb(240, 239, 239);
+}
+
+.container2 {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 82px;
+}
+
+.footer {
+  flex: 1;
+  grid-template-columns: 50% 50%;
+  align-content: center;
+  margin-top: 131.9px;
+}
+
+.main-header2 {
+  display: grid;
+  grid-template-columns: 15% 75% ;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23.7px;
+}
+
+.social-media-connect-account {
+  display: row;
+  margin-top: 25px;
+}
+
+.side-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 85px;
+  align-content: center;
+}
+
+.coffee-shop-logo2 {
+  height: 33px;
+  width: 30px;
+}
+
+.main-info {
+  margin-top: 26.11px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 30px;
+}
+
+.watermark {
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(175, 181, 192, 1);
+}
+
+.info-text1 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  height: 30px;
+  width: 71px;
+  color: rgba(11, 19, 42, 1);
+  margin-bottom: 20px;
+}
+
+.info-text {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: rgba(79, 86, 101, 1);
+  margin-top: 20px;
+}
+
+.info-text2 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 30px;
+  height: 30px;
+  width: 71px;
+  color: rgba(11, 19, 42, 1);
+  margin-top: 26px;
+}
+
