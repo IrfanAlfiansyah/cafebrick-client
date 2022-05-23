@@ -10,9 +10,40 @@
   src: url(/assets/Rubik/static/Rubik-Regular.ttf);
 }
 
+@media screen and (max-width: 680px){
+  #main-content{
+    width: auto;
+    float: none;
+  }  
+  #side-content{
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 1440px){
+  #maincontent{
+    width: 100%;
+    height: auto;
+  }  
+  #sidebar{
+    width: auto;
+    float: none;
+  }
+}
+
+@media screen and (max-width: 480px){
+  #header{
+    height: auto;
+  }  
+  #sidebar{
+    display: none;
+  }
+}
+
 .profile-login {
-  width: 720px;
-  height: 1628px;
+  width: 100%;
+  height: auto;
 }
 
 .container {
