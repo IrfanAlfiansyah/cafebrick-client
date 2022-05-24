@@ -19,6 +19,11 @@
 4. Right Click _index.html_ then choose **Open With Live Server**
 
 ## Preview
+<img src="assets/home.png"></img>
+<img src="assets/profile..png"></img>
+<img src="assets/product.png"></img>
+<img src="assets/signup.png"></img>
+<img src="assets/login.png"></img>
 
 
 ## Related Project
