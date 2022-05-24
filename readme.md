@@ -1,4 +1,4 @@
-<h1 style="text-align: center">Coffee Shop</h1>
+<h1 style="text-align: center" class="justify-content: center;">Coffee Shop</h1>
 
 <div style="display: flex; justify-content:center;">
 <img src=assets/logo.png /></img>
@@ -19,11 +19,14 @@
 4. Right Click _index.html_ then choose **Open With Live Server**
 
 ## Preview
-<img src="assets/home.png" style="width: 50%; height: auto;"></img>
-<img src="assets/profile..png" style="width: 50%; height: auto;"></img>
-<img src="assets/product.png" style="width: 50%; height: auto;"></img>
-<img src="assets/signup.png" style="width: 50%; height: auto;"></img>
-<img src="assets/login.png" style="width: 50%; height: auto;"></img>
+
+<div style="display: grid; grid-template-areas: 'a b'; row-gap: 10px; column-gap: 10px">
+<img src="assets/home.png" style="width: 100%; height: auto;"></img>
+<img src="assets/profile..png" style="width: 100%; height: auto;"></img>
+<img src="assets/product.png" style="width: 100%; height: auto;"></img>
+<img src="assets/signup.png" style="width: 100%; height: auto;"></img>
+<img src="assets/login.png" style="width: 100%; height: auto;"></img>
+</div>
 
 
 
