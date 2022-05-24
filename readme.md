@@ -21,11 +21,11 @@
 ## Preview
 
 <div style="display: grid; grid-template-areas: 'a b'; row-gap: 10px; column-gap: 10px">
-<img src="assets/home.png" style="width: 100%; height: auto;"></img>
-<img src="assets/profile..png" style="width: 100%; height: auto;"></img>
-<img src="assets/product.png" style="width: 100%; height: auto;"></img>
-<img src="assets/signup.png" style="width: 100%; height: auto;"></img>
-<img src="assets/login.png" style="width: 100%; height: auto;"></img>
+<img src="assets/home.png" style="width: 50%; height: auto;"></img>
+<img src="assets/profile..png" style="width: 50%; height: auto;"></img>
+<img src="assets/product.png" style="width: 50%; height: auto;"></img>
+<img src="assets/signup.png" style="width: 50%; height: auto;"></img>
+<img src="assets/login.png" style="width: 50%; height: auto;"></img>
 </div>
 
 
