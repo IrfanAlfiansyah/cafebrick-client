@@ -6,8 +6,8 @@
 }
 
 @font-face {
-  font-family: Rubik;
-  src: url(/assets/Rubik/static/Rubik-Regular.ttf);
+  font-family: "Rubik";
+  src: url("./assets/Rubik/static/Rubik-Regular.ttf");
 }
 
 @media screen and (max-width: 680px){
@@ -42,23 +42,23 @@
 }
 
 .profile-login {
-  width: 100%;
-  height: auto;
+  width:100%;
+  height:auto;
 }
 
 .container {
   display: flex;
-  font-family: Rubik;
   background: white;
   }
 
 .main-content {
   flex: 1;
-  max-width: 50%;
+  max-width: 100%;
   padding: 3.37% 3.43% 0% 3.43%;
 }
 
 .main-header {
+  font-family: "Rubik";
   height: 100px;
   display: grid;
   grid-template-columns: 10% 70% 20%;
@@ -68,20 +68,20 @@
   height: 33px;
   width: 30px;
   border-radius: 0px;
-  align: center;
 }
 
 .main-header-title {
+  font-family: "Rubik";
   width: 122px;
   font-size: 20px;
   color: rgba(106, 64, 41, 1);
 }
 
 .login {
+  font-family: "Rubik";
   width: 97px;
   font-size: 35px;
   color: rgba(106, 64, 41, 1);
-  align: right;
 }
 
 .register-form {
@@ -90,6 +90,7 @@
 }
 
 label {
+  font-family: "Rubik";
   font-size: 20px;
   font-weight: 700;
   line-height: 23.7px;
@@ -99,6 +100,7 @@ label {
 
 input,
 .register-submit {
+  font-family: "Rubik";
   width: 100%;
   height: 75px;
   border-radius: 20px;
@@ -114,6 +116,7 @@ input[type="password"] {
 }
 
 .forgot-password-text{
+  font-family: "Rubik";
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
@@ -122,6 +125,7 @@ input[type="password"] {
 }
 
 .login-submit {
+  font-family: "Rubik";
   margin: 20px 0px;
   box-shadow: 0px 6px 20px 0px rgba(255, 186, 51, 0.4);
   border: none;
@@ -137,6 +141,7 @@ input[type="password"] {
 }
 
 .login-submit {
+  font-family: "Rubik";
   width: 100%;
   height: 75px;
   border-radius: 20px;
@@ -150,12 +155,13 @@ input[type="password"] {
 
 .other-login-method {
   width: 100%;
-  font-family: Rubik;
+  font-family: "Rubik";
   height: 75px;
   border-radius: 20px;
 }
 
 .other-login-method {
+  font-family: "Rubik";
   margin: 20px 0px;
   box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.67);
   border: none;
@@ -175,6 +181,7 @@ input[type="password"] {
 }
 
 .has-account {
+  font-family: "Rubik";
   display: flex;
   column-gap: 10px;
   align-items: center;
@@ -195,6 +202,7 @@ input[type="password"] {
 }
 
 .signup-button {
+  font-family: "Rubik";
   display: flex;
   background: rgba(106, 64, 41, 1);
   font-size: 20px;
@@ -217,12 +225,14 @@ input[type="password"] {
 }
 
 .container2 {
+  background: rgba(248, 248, 248, 1);
   display: grid;
   grid-template-columns: 50% 50%;
   margin-top: 82px;
 }
 
 .footer {
+  font-family: "Rubik";
   flex: 1;
   grid-template-columns: 50% 50%;
   align-content: center;
@@ -230,6 +240,7 @@ input[type="password"] {
 }
 
 .main-header2 {
+  font-family: "Rubik";
   display: grid;
   grid-template-columns: 15% 75% ;
   font-size: 20px;
@@ -262,6 +273,7 @@ input[type="password"] {
 }
 
 .watermark {
+  font-family: "Rubik";
   margin-top: 30px;
   font-size: 16px;
   font-weight: 400;
@@ -270,8 +282,9 @@ input[type="password"] {
 }
 
 .info-text1 {
+  font-family: "Rubik";
   font-size: 18px;
-  font-weight: 500;
+  font-weight: bold;
   line-height: 30px;
   height: 30px;
   width: 71px;
@@ -280,6 +293,7 @@ input[type="password"] {
 }
 
 .info-text {
+  font-family: "Rubik";
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
@@ -288,8 +302,9 @@ input[type="password"] {
 }
 
 .info-text2 {
+  font-family: "Rubik";
+  font-weight: bold;
   font-size: 18px;
-  font-weight: 500;
   line-height: 30px;
   height: 30px;
   width: 71px;

@@ -1,61 +1,88 @@
-*,
-*::before,
-*::after {
+* {
   margin: 0;
-  box-sizing: border-box;
+  padding: 0;
+}
+
+/* font */
+@font-face {
+  font-family: "Rubik";
+  src: url("./assets/Rubik/static/Rubik-Regular.ttf");
 }
 
 @font-face {
-  font-family: Rubik;
-  src: url(/assets/Rubik/static/Rubik-Regular.ttf);
+  font-family: "Poppins";
+  src: url("./assets/Poppins/Poppins-Bold.ttf");
 }
 
-.profile-login {
-  width: 720px;
+main {
+  width: 100%;
+  display: flex;
   height: 1628px;
 }
 
-.container {
-  display: flex;
-  font-family: Rubik;
-  background: white;
-  }
-
-.main-content {
+/* side-section */
+.side {
   flex: 1;
-  max-width: 50%;
-  padding: 3.37% 3.43% 0% 3.43%;
 }
 
+.side-img {
+  width: 100%;
+  height: 100%;
+}
+
+/* main-section */
 .main-header {
+  flex: 1;
+  background-color: white;
   display: grid;
-  height: 100px;
-  grid-template-columns: 10% 50% 40%;
+  grid-template-columns: auto auto;
+  grid-template-rows: 200px auto auto;
 }
 
-.coffee-shop-logo {
-  height: 33px;
+/*logo */
+.header {
+  display: flex;
+  font-family: "Rubik";
+}
+
+.logo-img {
   width: 30px;
-  border-radius: 0px;
-  align: center;
+  height: 33px;
+  margin-left: 50px;
+  margin-top: 55px;
 }
 
 .main-header-title {
-  width: 122px;
+  font-family: "Rubik";
+  font-weight: 700;
   font-size: 20px;
-  color: rgba(106, 64, 41, 1);
+  color: rgba(11, 19, 42, 1);
+  margin-top: 60px;
+  margin-left: 20px;
 }
 
-.login {
-  width: 97px;
+/* header title */
+.title-text {
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 700;
   font-size: 35px;
+  line-height: 41px;
   color: rgba(106, 64, 41, 1);
-  align: right;
+  margin-top: 55px;
+  text-align: right;
+  padding-right: 50px;
 }
 
-.register-form {
-  display: flex;
-  flex-direction: column;
+/* form */
+.form {
+  grid-column: 1/3;
+}
+
+.form-container {
+  padding-bottom: 100px;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 label {
@@ -79,190 +106,416 @@ input[type="password"] {
   font-size: 20px;
   font-weight: 400;
   line-height: 23.7px;
-  padding: 25px 30px;
+  padding-left: 30px;
 }
 
-.forgot-password-text{
+.inside {
+  margin-top: 32px;
+  font-family: "Rubik";
   font-size: 20px;
   font-weight: 700;
   line-height: 24px;
-  text-decoration: underline solid;
-  color: rgba(106, 64, 41, 1);
+  text-align: left;
+  color: rgba(79, 86, 101, 1);
 }
 
-.login-submit {
-  margin: 20px 0px;
-  box-shadow: 0px 6px 20px 0px rgba(255, 186, 51, 0.4);
+.form-input {
+  background: #ffffff;
+  border: 1px solid rgba(79, 86, 101, 1);
+  color: rgba(159, 159, 159, 1);
+  height: 75px;
+  border-radius: 20px;
+  font-family: "Rubik";
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  margin-top: 10px;
+}
+
+.btn-signup {
   border: none;
   background: rgba(255, 186, 51, 1);
-  display: flex;
+  box-shadow: 0px 6px 20px rgba(255, 186, 51, 0.4);
+  border-radius: 20px;
+  font-family: "Rubik";
+  cursor: pointer;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
+  font-weight: 700;
   font-size: 20px;
-  font-weight: 700;
   line-height: 25px;
+  height: 75px;
   color: rgba(106, 64, 41, 1);
-}
-
-.login-submit {
+  margin-top: 30px;
   width: 100%;
-  height: 75px;
-  border-radius: 20px;
-  margin-bottom: 26px;
-  margin-top: 51px;
 }
 
-.login-submit :active {
-  background: rgb(231, 156, 4);
+.btn-signup:hover {
+  background: rgb(252, 180, 36);
 }
 
-.other-login-method {
-  width: 100%;
-  font-family: Rubik;
-  height: 75px;
-  border-radius: 20px;
-}
-
-.other-login-method {
-  margin: 20px 0px;
-  box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.67);
+.btn-google {
   border: none;
+  box-shadow: 0px 6px 20px 0px rgba(196, 196, 196, 0.67);
   background: rgba(255, 255, 255, 1);
-  display: flex;
+  border-radius: 20px;
+  font-family: "Poppins";
+  cursor: pointer;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
-  font-size: 17px;
   font-weight: 700;
-  line-height: 25.5px;
-  color: rgba(0, 0, 0, 1);
+  font-size: 17px;
+  line-height: 26px;
+  height: 75px;
+  color: rgba(106, 64, 41, 1);
+  margin-top: 30px;
+  width: 100%;
 }
 
-.other-login-method :active {
+.btn-google:hover {
   background: rgb(240, 239, 239);
+}
+
+.img-google {
+  width: 30px;
+  height: 30px" 
+}
+
+.btn-login {
+  border: none;
+  background: rgba(106, 64, 41, 1);
+  box-shadow: 0px 6px 20px rgba(106, 64, 41, 0.63);
+  border-radius: 20px;
+  font-family: "Rubik";
+  justify-content: center;
+  cursor: pointer;
+  align-items: center;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 25px;
+  height: 75px;
+  color: white;
+  margin-top: 30px;
+  text-decoration: none;
+  width: 100%;
+}
+
+.btn-login:hover {
+  background: rgb(139, 90, 63);
 }
 
 .has-account {
   display: flex;
   column-gap: 10px;
   align-items: center;
+  padding-top: 30px;
 }
 
 .has-account-text {
-  font-size: 16px;
+  flex: 2;
+  font-family: "Rubik";
+  cursor: pointer;
   font-weight: 700;
+  font-size: 16px;
+  position: relative;
+  top: 7px;
   line-height: 30px;
   text-align: center;
   color: rgba(159, 159, 159, 1);
+  ;
 }
 
 .underline {
   flex: 1;
-  height: 2px;
-  border-bottom: 2px solid rgba(196, 196, 196, 1);
+  height: 1px;
+  border: 2px solid rgba(159, 159, 159, 1);
+  ;
 }
 
-.signup-button {
-  display: flex;
-  background: rgba(106, 64, 41, 1);
+.logo-img2 {
+  width: 33px;
+  height: 33px;
+  margin-left: 50px;
+  margin-top: 65px;
+}
+
+.logo-text {
+  font-family: "Rubik";
   font-size: 20px;
   font-weight: 700;
-  line-height: 25px;
-  height: 75px;
-  width: 100%;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  cursor: pointer;
-  box-shadow: 0px 6px 20px 0px rgba(106, 64, 41, 0.63);
-  margin-top: 42px;
-  margin-bottom: 82px;
-  color: rgba(255, 255, 255, 1);
-}
-
-.signup-button :active {
-  background: rgb(240, 239, 239);
-}
-
-.container2 {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 82px;
-}
-
-.footer {
-  flex: 1;
-  grid-template-columns: 50% 50%;
-  align-content: center;
-  margin-top: 131.9px;
-}
-
-.main-header2 {
-  display: grid;
-  grid-template-columns: 15% 75% ;
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 23.7px;
-}
-
-.social-media-connect-account {
-  display: row;
-  margin-top: 25px;
+  line-height: 24px;
+  margin-top: 70px;
+  margin-left: 20px;
 }
 
 .side-info {
-  display: grid;
-  grid-template-columns: 50% 50%;
-  margin-top: 85px;
-  align-content: center;
+  grid-column: 1/3;
+  display: flex;
+  background: rgba(248, 248, 248, 1);
+  width: 100%;
+  column-gap: 20%;
 }
 
-.coffee-shop-logo2 {
-  height: 33px;
-  width: 30px;
+.left-info {
+  flex: 1;
+  padding-top: 150px;
+  padding-left: 50px;
 }
 
-.main-info {
-  margin-top: 26.11px;
-  font-size: 16px;
+.head {
+  display: flex;
+}
+
+.left-text {
+  font-family: "Rubik";
   font-weight: 500;
+  font-size: 16px;
   line-height: 30px;
+  color: rgba(79, 86, 101, 1);
+  margin-left: 50px;
+  margin-top: 25px;
 }
 
-.watermark {
-  margin-top: 30px;
-  font-size: 16px;
+.sosmed {
+  display: flex;
+  margin-left: 25px;
+}
+
+.sosmed-icon {
+  height: 30px;
+  width: 30px;
+  border-radius: 20px;
+  background-color: rgba(106, 64, 41, 1);
+  margin-left: 25px;
+  margin-top: 10px;
+}
+
+.sosmed-img {
+  height: 33px;
+  width: 33px;
+  color: rgba(106, 64, 41, 1);
+}
+
+.left-footer {
+  padding-top: 20px;
+  padding-left: 50px;
+}
+
+.footer-text {
+  font-family: "Rubik";
   font-weight: 400;
+  font-size: 16px;
   line-height: 30px;
   color: rgba(175, 181, 192, 1);
 }
 
-.info-text1 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  height: 30px;
-  width: 71px;
-  color: rgba(11, 19, 42, 1);
-  margin-bottom: 20px;
+.right-info {
+  flex: 1;
+  padding-top: 100px;
+  width: 100%;
 }
 
-.info-text {
-  font-size: 16px;
+.body {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: auto auto auto;
+}
+
+.right-text-head {
+  grid-column: 1/3;
+  font-family: "Rubik";
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 30px;
+  color: rgba(11, 19, 42, 1);
+  margin-top: 50px;
+}
+
+.right-text {
+  font-family: "Rubik";
   font-weight: 400;
+  font-size: 16px;
   line-height: 30px;
   color: rgba(79, 86, 101, 1);
-  margin-top: 20px;
+  margin-top: 10px;
 }
 
-.info-text2 {
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 30px;
-  height: 30px;
-  width: 71px;
-  color: rgba(11, 19, 42, 1);
-  margin-top: 26px;
+/* responsive tablet */
+@media only screen and (max-width: 768px) {
+  main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .side-img {
+    max-height: auto;
+    height: 100%;
+  }
+
+  .main-header {
+    height: auto;
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px auto auto;
+    padding-bottom: 150px;
+    background: rgba(248, 248, 248, 1);
+  }
+
+  .header {
+    background: rgba(248, 248, 248, 1);
+  }
+
+  .main-header-title {
+    background: rgba(248, 248, 248, 1);
+    margin-top: 45px;
+  }
+
+  .logo-img {
+    margin-left: 40px;
+    margin-top: 40px;
+  }
+
+   .title-text {
+    margin-top: 40.12px;
+    text-align: center;
+    margin-left: 150px;
+  }
+
+  .form {
+    background-color: white;
+    padding-bottom: 50px;
+  }
+
+  .form-container {
+    padding-left: 50px;
+  }
+
+  .inside {
+    font-size: 18px;
+    margin-top: 20px;
+  }
+
+  .form-input {
+    font-size: 18px;
+    height: 65px;
+    border-radius: 18px;
+  }
+
+  .btn-sign {
+    font-size: 18px;
+    height: 65px;
+    border-radius: 18px;
+    margin-top: 37px;
+  }
+
+  .btn-google {
+    font-size: 16px;
+    height: 65px;
+    border-radius: 18px;
+    margin-top: 27px;
+  }
+
+  .img-google {
+    max-width: 17px;
+    max-height: 18px;
+  }
+
+  .btn-login {
+    font-size: 18px;
+    height: 65px;
+    border-radius: 18px;
+    margin-top: 32px;
+  }
+
+  .has-account-text {
+    font-size: 15px;
+    flex: 2;
+  }
+
+  .underline {
+    border: 1px solid #c4c4c4;
+  }
+
+  .side-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 70px;
+    column-gap: 5%;
+    padding-top: 50px;
+  }
+
+  .left-info {
+    flex: 1;
+    padding: 40px;
+    padding-top: 35px;
+  }
+
+  .head {
+    display: flex;
+    margin-left: 40px;
+  }
+
+  .left-text {
+    margin-left:30px;
+  }
+
+  .logo-img2 {
+    margin-left: 0px;
+  }
+
+  .sosmed-icon {
+    margin-left: 0px;
+    margin-right: 20px;
+  }
+
+  .left-footer{
+    padding-top: 20px;
+    padding-left: 30px;
+  }
+
+  .right-info {
+    flex: 1;
+    padding-top: 10px;
+    padding: 30px;
+  }
+
+  .body {
+    margin-top: 0;
+  }
 }
 
+
+
+/* responsive mobile */
+
+/* responsive mobile small resolution */
+@media only screen and (max-width: 425px) {
+  .side-img {
+    display: none;
+  }
+
+  .main-section {
+    flex: 1;
+    background-color: white;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+  }
+
+  .header-logo {
+    grid-column: 1/3;
+  }
+
+  .header-title {
+    display: flex;
+    grid-column: 1/3;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .title-text {
+    text-align: center;
+  }
+}

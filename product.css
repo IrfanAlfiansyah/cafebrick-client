@@ -3,7 +3,7 @@ body,
 html {
    margin: 0;
    box-sizing: border-box;
-   font-family: 'Rubik', sans-serif;
+   font-family: "Rubik"
 }
 .header {
    height: 130px;
@@ -88,14 +88,14 @@ html {
    padding: 29px;
 }
 .img-container {
-   margin: 0vh 10vh;
+   width: 50%;
+   margin: 0vh 8vh;
    position: relative;
    background: #ffcb65;
    height: 500px;
    display: flex;
    flex-direction: column;
    align-items: center;
-   justify-content: start;
    border-radius: 20px;
    z-index: 5;
 }
@@ -120,8 +120,8 @@ html {
    background-color: #000000;
    border-radius: 20px;
    position: absolute;
-   top: 7vh;
-   left: 15vh;
+   top: 5vh;
+   left: 8vh;
    z-index: 4;
 }
 .brown-layer {
@@ -131,8 +131,8 @@ html {
    background-color: #6a4029;
    border-radius: 20px;
    position: absolute;
-   top: 13vh;
-   left: 18vh;
+   top: 10vh;
+   left: 12vh;
    z-index: 3;
 }
 .promo-title {

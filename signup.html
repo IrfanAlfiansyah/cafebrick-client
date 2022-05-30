@@ -3,91 +3,113 @@
 
 <head>
   <meta charset="UTF-8" />
-  <meta name="description" content="Coffee Shop" />
+  <meta name="description" content="Sign-Up" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="login.css" />
-  <title>Coffee-shop-Signup</title>
+  <link rel="stylesheet" href="signup.css" />
+  <title>SignUp</title>
 </head>
 
 <body>
-  <div class="container">
-    <aside class="side-content">
-      <img src="/assets/profilesignin.png" alt="profile-signin" class="profile-login"/>
+  <main>
+    <aside class="side">
+      <img class="side-img" src="./assets/profilesignin.png" alt="" />
     </aside>
-
-    <main class="main-content">
-      <header class="main-header">
-        <img src="/assets/logo.png" alt="coffee-shop-logo" class="coffee-shop-logo" />
-        <p class="main-header-title">Coffee Shop</p>
-        <p class="login">Sign Up</p>
+    <section class="main-header">
+      <header class="header">
+        <img class="logo-img" src="./assets/logo.png" alt="logo" />
+        <p class="main-header-title">Cafebr!ck</p>
       </header>
-      <form class="register-form">
-        <label for="email">Email Address :</label>
-        <input class="inside" type="text" id="email" placeholder="Enter your email address" />
-        <label for="password">Password :</label>
-        <input type="password" id="password" placeholder="Enter your password" />
-        <label for="phone">Phone number :</label>
-        <input type="password" id="password" placeholder="Enter your phone number" />
-      </form>
-
-      <button class="login-submit" >Sign Up</button>
-
-      <section class="other-login-method">
-        <button class="other-login-method"> <img src="/assets/google.png" alt="google-logo"
-            class="coffee-shop-logo" />Login With Google </button>
-      </section>
-
-      <section class="has-account">
-        <div class="underline"></div>
-        <p class="has-account-text">Already have an account?</p>
-        <div class="underline"></div>
-      </section>
-
-      <div class="signup-button">Login Here</div>
-
-      <div class="container2">
-      <div class="footer">
-        <div class="main-header2">
-          <img src="/assets/logo.png" alt="cofee-shop-logo" class="coffee-shop-logo2" />
-          <p class="main-header-title2">Coffee Shop</p>
+      <div class="title">
+        <p class="title-text">Sign Up</p>
+      </div>
+      <div class="form">
+        <div class="container">
+          <form class="form-container">
+            <div class="mb-3">
+              <label class="inside">Email Address :</label>
+              <input type="text" class="form-input" placeholder="Enter your email adress" />
+            </div>
+            <div class="mb-3">
+              <label class="inside">Password :</label>
+              <input type="password" class="form-input" placeholder="Enter your password" />
+            </div>
+            <div class="mb-3">
+              <label class="inside">Phone Number :</label>
+              <input type="text" class="form-input" placeholder="Enter your phone number" />
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn-signup">
+                Sign Up
+              </button>
+            </div>
+            <div class="mb-3">
+              <button type="button" class="btn-google">
+                <img class="img-google" src="./assets/google.png" alt="google" />
+                Sign up with Google
+              </button>
+            </div>
+            <section class="has-account">
+              <div class="underline"></div>
+              <p class="has-account-text">Already have an account?</p>
+              <div class="underline"></div>
+            </section>
+            <div class="mb-3">
+              <button type="button" class="btn-login">
+                Login Here
+              </button>
+            </div>
+          </form>
         </div>
-
-        <p class="main-info">Coffee Shop is a store that sells some <br> good meals, and especially coffee. We <br> provide high
-          quality beans</p>
-
-        <section class="social-media-connect-account">
-          <img src="/assets/fb.svg" alt="facebook" class="facebook" />
-          <img src="/assets/ig.svg" alt="instagram" class="instagram" />
-          <img src="/assets/tw.svg" alt="twitter" class="twitter" />
+      </div>
+      <footer class="side-info">
+        <section class="left-info">
+          <section class="head">
+            <img class="logo-img2" src="./assets/logo.png" alt="logo" />
+            <p class="logo-text">Cafebr!ck</p>
+          </section>
+          <section class="body-info">
+            <p class="left-text">
+              Cafebr!ck is a store that sells some good meals, and
+              especially coffee. We provide high quality beans
+            </p>
+          </section>
+          <section class="sosmed">
+            <div class="sosmed-icon">
+              <img class="sosmed-img" src="./assets/fb.svg" alt="fb" />
+            </div>
+            <div class="sosmed-icon">
+              <img class="sosmed-img" src="./assets/tw.svg" alt="tw" />
+            </div>
+            <div class="sosmed-icon">
+              <img class="sosmed-img" src="./assets/ig.svg" alt="ig" />
+            </div>
+          </section>
+          <section class="left-footer">
+            <p class="footer-text">©2022Cafebr!ck</p>
+          </section>
         </section>
-
-        <div class="watermark">&#169;2022CoffeeStore</div>
-      </div>
-
-        <div class="side-info">
-          <h1 class="info-text1">Product</h1>
-          <p></p>
-          <p class="info-text">Download</p>
-          <p class="info-text">Pricing</p>
-          <p class="info-text">Locations</p>
-          <p class="info-text">Countries</p>
-          <p class="info-text">Blog</p>
-          <p></p>
-
-          <h2 class="info-text2">Engage</h2>
-          <p></p>
-          <p class="info-text">Coffee Shop ?</p>
-          <p class="info-text">About Us</p>
-          <p class="info-text">FAQ</p>
-          <p class="info-text">Privacy Policy</p>
-          <p class="info-text">Terms of Service</p>
-        </div>
-      </div>
-  </div>
-  </div>
+        <section class="right-info">
+          <div class="body">
+            <p class="right-text-head">Product</p>
+            <p class="right-text">Download</p>
+            <p class="right-text">Pricing</p>
+            <p class="right-text">Locations</p>
+            <p class="right-text">Countries</p>
+            <p class="right-text">Blog</p>
+          </div>
+          <div class="body">
+            <p class="right-text-head">Engage</p>
+            <p class="right-text">Cafebr!ck?</p>
+            <p class="right-text">About Us</p>
+            <p class="right-text">FAQ</p>
+            <p class="right-text">Privacy Policy</p>
+            <p class="right-text">Terms of Service</p>
+          </div>
+        </section>
+      </footer>
+    </section>
   </main>
-
 </body>
 
 </html>
